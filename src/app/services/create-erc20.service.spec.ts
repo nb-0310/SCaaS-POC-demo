@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CreateScService } from './create-sc.service';
+import { CreateErc20Service } from './create-erc20.service';
 
-describe('CreateScService', () => {
-  let service: CreateScService;
+describe('CreateErc20Service', () => {
+  let service: CreateErc20Service;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(CreateScService);
+    service = TestBed.inject(CreateErc20Service);
   });
 
   it('should be created', () => {

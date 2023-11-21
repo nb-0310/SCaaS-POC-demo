@@ -1,0 +1,41 @@
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="erc20Options.name" required />
+  
+    <label for="symbol">Symbol:</label>
+    <input type="text" id="symbol" name="symbol" [(ngModel)]="erc20Options.symbol" required />
+  
+    <label for="premint">Premint:</label>
+    <input type="text" id="premint" name="premint" [(ngModel)]="erc20Options.premint" required />
+  
+    <div>
+      <label for="mintable">Mintable:</label>
+      <input type="checkbox" id="mintable" name="mintable" [(ngModel)]="erc20Options.mintable" />
+    </div>
+  
+    <div>
+      <label for="burnable">Burnable:</label>
+      <input type="checkbox" id="burnable" name="burnable" [(ngModel)]="erc20Options.burnable" />
+    </div>
+  
+    <div>
+      <label for="pausable">Pausable:</label>
+      <input type="checkbox" id="pausable" name="pausable" [(ngModel)]="erc20Options.pausable" />
+    </div>
+  
+    <label for="access">Access:</label>
+    <select id="access" [(ngModel)]="erc20Options.access" name="access">
+      <option value="ownable">Ownable</option>
+      <option value="roles">Roles</option>
+      <option value="managed">Managed</option>
+    </select>
+  
+    <label for="upgradeable">Upgradeable:</label>
+    <select id="upgradeable" name="upgradeable" [(ngModel)]="erc20Options.upgradeable">
+      <option value="uups">UUPS</option>
+      <option value="transparent">Transparent</option>
+    </select>
+  
+    <button type="submit" (click)="onSubmit()">Create ERC20 Contract</button>
+  </form>
+  
